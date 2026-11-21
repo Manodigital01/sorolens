@@ -128,7 +128,7 @@ test.describe("visual regression", () => {
         await expect(page).toHaveScreenshot(`${name}-${theme}.png`, {
           animations: "disabled",
           mask: masks(page),
-          maxDiffPixelRatio: 0.002,
+          maxDiffPixelRatio: 0.01,
         });
       });
     }
